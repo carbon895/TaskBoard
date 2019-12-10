@@ -1,0 +1,38 @@
+<template>
+  <nav class="teal">
+    <div class="nav-wrapper">
+      <router-link to="/" class="brand-logo">TASKBOARD</router-link>
+      <ul class="right hide-on-med-and-down">
+        <router-link 
+            tag="li" 
+            to="/"
+            exact
+            active-class="active"
+        >
+            <a href="#">Create</a>
+        </router-link>
+        <router-link 
+            tag="li" 
+            to="/list"
+            active-class="active"
+        >
+            <a href="#">List</a>
+        </router-link>
+      </ul>
+    </div>
+  </nav>
+</template>
+
+<script>
+  
+export default {
+    
+}
+
+</script>
+
+<style scoped>
+    nav {
+        padding: 0 5% 
+    }
+</style>
